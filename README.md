@@ -16,6 +16,17 @@
 
 ---
 
+### Featured project (MVP)
+
+**[SysSpectogram](https://github.com/lifeqsoll/SysSpectogram)** is a Linux / VPS defense utility that treats host telemetry as images.
+
+It samples CPU, memory, network, and disk metrics every second, builds 60-second windows into spectrogram-like matrices, and scores them with a **CNN (computer vision)** plus **Isolation Forest (classical ML)** ensemble. Around that core it adds perimeter / egress watching, optional OSINT, and a Telegram / web control plane for alerts and SOAR-lite responses (ban, recon, kill — with dry-run).
+
+[![Repo](https://img.shields.io/badge/GitHub-SysSpectogram-181717?style=flat-square&logo=github)](https://github.com/lifeqsoll/SysSpectogram)
+[![Demo](https://img.shields.io/badge/Live_demo-Pages-0588C6?style=flat-square)](https://lifeqsoll.github.io/SysSpectogram/demo/)
+
+---
+
 ### Tech Stack
 
 **Languages**
@@ -40,4 +51,3 @@
 
 [![Telegram](https://img.shields.io/badge/Telegram-26A5E4?style=flat-square&logo=telegram&logoColor=white)](https://t.me/emosensei)
 [![Email](https://img.shields.io/badge/Gmail-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:lifeqsoll@gmail.com)
-
