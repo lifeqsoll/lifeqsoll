@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGZ3aWtzenQ0eWJoc3Y0ZmtodHd3b3UwZWJkdW1xNmQwZTR6cW5qeCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/PFkgOFloYgGqc/giphy.gif" width="100%" style="max-height: 200px; object-fit: cover; border-radius: 8px;" alt="Header Banner"/>
+  <img src="https://giphy.com/gifs/serial-experiments-lain-PZrjGkr334fXa" width="100%" style="max-height: 200px; object-fit: cover; border-radius: 8px;" alt="Header Banner"/>
   <br/><br/>
   <a href="https://github.com/lifeqsoll">
     <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=58A6FF&center=true&vCenter=true&width=600&lines=Hi!+I'm+lifeqsoll;AI+%26+ML+Developer;Deep+Learning+%7C+Computer+Vision" alt="Typing SVG" />
