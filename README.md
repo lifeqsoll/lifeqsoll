@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://i.giphy.com/PZrjGkr334fXa.webp" width="100%" style="max-height: 200px; object-fit: cover; border-radius: 8px;" alt="Header Banner"/>
+  <img src="https://i.giphy.com/PZrjGkr334fXa.webp" width="100%" height="140px" style="object-fit: cover; border-radius: 8px;" alt="Header Banner"/>
   <br/><br/>
   <a href="https://github.com/lifeqsoll">
     <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=58A6FF&center=true&vCenter=true&width=600&lines=Hi!+I'm+lifeqsoll;AI+%26+ML+Developer;Deep+Learning+%7C+Computer+Vision" alt="Typing SVG" />
