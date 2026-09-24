@@ -36,17 +36,8 @@
 
 ---
 
-### Stats
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=lifeqsoll&show_icons=true&theme=dark&hide_border=true&title_color=58a6ff&text_color=8b949e&icon_color=58a6ff&bg_color=0d1117" alt="lifeqsoll's stats" height="165" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=lifeqsoll&layout=compact&theme=dark&hide_border=true&title_color=58a6ff&text_color=8b949e&bg_color=0d1117" alt="Top Languages" height="165" />
-</div>
-
----
-
 ### Contact
 
-[![Telegram](https://img.shields.io/badge/Telegram-26A5E4?style=flat-square&logo=telegram&logoColor=white)](https://t.me/your_username)
-[![Email](https://img.shields.io/badge/Gmail-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:your_email@example.com)
+[![Telegram](https://img.shields.io/badge/Telegram-26A5E4?style=flat-square&logo=telegram&logoColor=white)](https://t.me/emosensei)
+[![Email](https://img.shields.io/badge/Gmail-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:lifeqsoll@gmail.com)
 
