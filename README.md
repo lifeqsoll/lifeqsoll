@@ -12,23 +12,19 @@
 
 * **Education:** High school student focused on AI development.
 * **Focus:** Deep learning, computer vision architectures, and multimodal models (CLIP).
-* **Achievements:** **AI Challenge**, participant in the Main Stage of the international youth AI competition.
+* **Achievements:** **AI Challenge** — Participant in the Main Stage of the international youth AI competition.
 
 ---
 
 ### Featured project (MVP)
 
-**[SysSpectogram](https://github.com/lifeqsoll/SysSpectogram)** is a Linux utility for a VPS or a bare host.
+**[SysSpectogram](https://github.com/lifeqsoll/SysSpectogram)** is a Linux / VPS defense utility that treats host telemetry as images.
 
-An antivirus catches malware by a known file. A CPU or GPU miner, SSH password guesses, and odd outgoing traffic usually have no such file. SysSpectogram records how the machine behaves, turns one minute into a picture, and asks whether that minute looks like normal work.
-
-Once a second it writes CPU, memory, disk, network, and GPU. Sixty seconds become one image. A small convnet reads the image. An isolation forest reads the same minute as a table. The number is `0.6 * convnet + 0.4 * isolation forest`, with the bar set so an attack is missed less often.
-
-Around that it watches the edge of the host (password guesses, scans, outgoing traffic, DNS), runs OSINT on the attacker IP (nmap, DNS, certificate logs), and sends alerts to Telegram and a web page. Ban, recon, and kill are not applied until you confirm them. A Rust agent sits next to the model for processes, paths, modules, and file integrity. Aya is ready: `common`, the eBPF programs, the loader, and the `execve` and `openat` probes.
+It samples CPU, memory, network, disk, and **GPU** metrics every second, builds 60-second windows into spectrogram-like matrices, and scores them with a **CNN (computer vision)** plus **Isolation Forest (classical ML)** ensemble — useful for behavioral anomalies such as **CPU / GPU crypto-miners**, resource abuse, and unusual host load. Around that core it adds perimeter / egress watching, OSINT on the attacker IP (nmap, DNS, certificate logs), and a Telegram / web control plane for alerts and SOAR-lite responses (ban, recon, kill — with dry-run). Aya is ready: `common`, eBPF, loader, and the `execve` / `openat` probes.
 
 [![Repo](https://img.shields.io/badge/GitHub-SysSpectogram-181717?style=flat-square&logo=github)](https://github.com/lifeqsoll/SysSpectogram)
 [![Demo](https://img.shields.io/badge/Live_demo-Pages-0588C6?style=flat-square)](https://lifeqsoll.github.io/SysSpectogram/demo/)
-[![Site](https://img.shields.io/badge/Bio-lifeqsoll-0B3A66?style=flat-square)](https://github.com/lifeqsoll/bio)
+[![Site](https://img.shields.io/badge/Website-bio-0B3A66?style=flat-square)](https://lifeqsoll.github.io/bio/)
 
 ---
 
@@ -36,20 +32,21 @@ Around that it watches the edge of the host (password guesses, scans, outgoing t
 
 **Languages**
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-003B57?style=flat-square&logo=sqlite&logoColor=white)
 ![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white)
 
 **Machine Learning & CV**
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
-![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
 ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
 
-**Host & tools**
+**Tools & OS**
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
-![Aya](https://img.shields.io/badge/Aya-eBPF-3D8BFD?style=flat-square)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+![Aya](https://img.shields.io/badge/Aya-eBPF-3D8BFD?style=flat-square)
 
 ---
 
