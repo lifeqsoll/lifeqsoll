@@ -13,7 +13,7 @@
 * **Education:** High school student focused on AI development.
 * **Focus:** Deep learning, computer vision architectures, and multimodal models (CLIP).
 * **Achievements:**
-  * **ROAI 2026** — **74th of 43,023** at the [All-Russian Olympiad in Artificial Intelligence](https://ai.edu.gov.ru/) (Всероссийская олимпиада по ИИ). Passed the proctored main stage.
+  * **ROAI 2026** - **74th of 43,023** at the [All-Russian Olympiad in Artificial Intelligence](https://ai.edu.gov.ru/) (Всероссийская олимпиада по ИИ). Passed the proctored main stage.
   * **AI Challenge** — participant in the main stage of the international youth AI competition.
 
 ---
@@ -22,7 +22,7 @@
 
 #### 1. SysSpectogram — host defense as computer vision
 
-**[SysSpectogram](https://github.com/lifeqsoll/SysSpectogram)** **v1.2.0** — self-hosted Linux / VPS guard. Host telemetry becomes a spectrogram-like image for a small **CNN** (+ Isolation Forest); VPS runs **ONNX**, training stays elsewhere. Also works without ML: perimeter, Rust/eBPF agent, Telegram, Tauri Control Center (AppImage/deb). **v1.2** adds **Fleet**: many VPS from one laptop over SSH + device token (no public control API).
+**[SysSpectogram](https://github.com/lifeqsoll/SysSpectogram)** **v1.2.0** - self-hosted Linux / VPS guard. Host telemetry becomes a spectrogram-like image for a small **CNN** (+ Isolation Forest); VPS runs **ONNX**, training stays elsewhere. Also works without ML: perimeter, Rust/eBPF agent, Telegram, Tauri Control Center (AppImage/deb). **v1.2** adds **Fleet**: many VPS from one laptop over SSH + device token (no public control API).
 
 ![Version](https://img.shields.io/badge/Version-v1.2.0-2EA44F?style=flat-square)
 [![Repo](https://img.shields.io/badge/GitHub-SysSpectogram-181717?style=flat-square&logo=github)](https://github.com/lifeqsoll/SysSpectogram)
@@ -30,9 +30,9 @@
 [![Demo](https://img.shields.io/badge/Live_demo-Pages-0588C6?style=flat-square)](https://lifeqsoll.github.io/SysSpectogram/demo/)
 [![Site](https://img.shields.io/badge/Website-bio-0B3A66?style=flat-square)](https://lifeqsoll.github.io/bio/)
 
-#### 2. Gavel AI — layered AI-vs-real image signals
+#### 2. Gavel AI - layered AI-vs-real image signals
 
-**[Gavel AI](https://github.com/lifeqsoll/gavel-ai)** (**Apache-2.0**) looks for *signs* of AI-generated images — not a hard “fake” verdict. Frozen **OpenCLIP** probe plus local anatomy / artifact / geometry layers, fused into an inspectable signal. Gradio UI + Evidence JSON.
+**[Gavel AI](https://github.com/lifeqsoll/gavel-ai)** (**Apache-2.0**) looks for *signs* of AI-generated images - not a hard “fake” verdict. Frozen **OpenCLIP** probe plus local anatomy / artifact / geometry layers, fused into an inspectable signal. Gradio UI + Evidence JSON.
 
 ![License](https://img.shields.io/badge/License-Apache_2.0-blue?style=flat-square)
 [![Repo](https://img.shields.io/badge/GitHub-gavel--ai-181717?style=flat-square&logo=github)](https://github.com/lifeqsoll/gavel-ai)
