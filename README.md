@@ -12,7 +12,9 @@
 
 * **Education:** High school student focused on AI development.
 * **Focus:** Deep learning, computer vision architectures, and multimodal models (CLIP).
-* **Achievements:** **AI Challenge** — Participant in the Main Stage of the international youth AI competition.
+* **Achievements:**
+  * **ROAI 2026** — **74th of 43,023** at the [All-Russian Olympiad in Artificial Intelligence](https://ai.edu.gov.ru/) (Всероссийская олимпиада по ИИ). Passed the proctored main stage.
+  * **AI Challenge** — participant in the main stage of the international youth AI competition.
 
 ---
 
@@ -20,12 +22,15 @@
 
 #### 1. SysSpectogram — host defense as computer vision
 
-**[SysSpectogram](https://github.com/lifeqsoll/SysSpectogram)** is a Linux / VPS defense utility that treats host telemetry as images.
+**[SysSpectogram](https://github.com/lifeqsoll/SysSpectogram)** **v1.1.1** is a self-hosted Linux / VPS guard. Host telemetry is the image.
 
-It samples CPU, memory, network, disk, and **GPU** metrics every second, builds 60-second windows into spectrogram-like matrices, and scores them with a **CNN (computer vision)** plus **Isolation Forest (classical ML)** ensemble — useful for behavioral anomalies such as **CPU / GPU crypto-miners**, resource abuse, and unusual host load. Around that core it adds perimeter / egress watching, OSINT on the attacker IP (nmap, DNS, certificate logs), and a Telegram / web control plane for alerts and SOAR-lite responses (ban, recon, kill — with dry-run). In v1.0 it also ships a **Tauri 2 + Svelte** Control Center desktop app, a polkit-gated root helper, a Rust integrity agent with **Aya eBPF** probes (`execve`, `openat`, module load, `kill`, `setuid`), and an incident engine with ATT&CK mapping and HTML reports.
+It samples CPU, memory, network, disk, and **GPU** once a second, cuts **60-second** windows into spectrogram-like matrices, and can score them with a **CNN** plus **Isolation Forest**. Training stays on another machine; the VPS runs **ONNX**. The same guard also runs with no model at all: perimeter, the Rust agent, and metrics. Around that sit egress and auth watching, OSINT on an attacker IP, Telegram alerts, and an optional local web UI. Response is operator-chosen — observe, shield, aggressive, or isolate — with a never-ban list so the box cannot lock out its owner.
 
-![Version](https://img.shields.io/badge/Version-v1.0.0-2EA44F?style=flat-square)
+The day-to-day surface is a **Tauri 2 + Svelte** Control Center (Home, charts, alerts, settings; the rest behind Advanced), shipped as an **AppImage** or **.deb**, plus a headless day-0 install over SSH. A user systemd unit keeps protection running after the app closes. A polkit-gated root helper applies settings. The Rust agent watches process, file, and kernel signals, with optional **Aya eBPF** probes (`execve`, `openat`, module load and unload, `kill`, `setuid`). Related alerts become incidents with ATT&CK mapping and an HTML report.
+
+![Version](https://img.shields.io/badge/Version-v1.1.1-2EA44F?style=flat-square)
 [![Repo](https://img.shields.io/badge/GitHub-SysSpectogram-181717?style=flat-square&logo=github)](https://github.com/lifeqsoll/SysSpectogram)
+[![Release](https://img.shields.io/github/v/release/lifeqsoll/SysSpectogram?style=flat-square)](https://github.com/lifeqsoll/SysSpectogram/releases)
 [![Demo](https://img.shields.io/badge/Live_demo-Pages-0588C6?style=flat-square)](https://lifeqsoll.github.io/SysSpectogram/demo/)
 [![Site](https://img.shields.io/badge/Website-bio-0B3A66?style=flat-square)](https://lifeqsoll.github.io/bio/)
 
