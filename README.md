@@ -14,7 +14,7 @@
 * **Focus:** Deep learning, computer vision architectures, and multimodal models (CLIP).
 * **Achievements:**
   * **ROAI 2026** - **74th of 43,023** at the [All-Russian Olympiad in Artificial Intelligence](https://ai.edu.gov.ru/) (Всероссийская олимпиада по ИИ). Passed the proctored main stage.
-  * **AI Challenge** — participant in the main stage of the international youth AI competition.
+  * **AI Challenge** - participant in the main stage of the international youth AI competition.
 
 ---
 
