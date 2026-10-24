@@ -22,13 +22,9 @@
 
 #### 1. SysSpectogram — host defense as computer vision
 
-**[SysSpectogram](https://github.com/lifeqsoll/SysSpectogram)** **v1.1.1** is a self-hosted Linux / VPS guard. Host telemetry is the image.
+**[SysSpectogram](https://github.com/lifeqsoll/SysSpectogram)** **v1.2.0** — self-hosted Linux / VPS guard. Host telemetry becomes a spectrogram-like image for a small **CNN** (+ Isolation Forest); VPS runs **ONNX**, training stays elsewhere. Also works without ML: perimeter, Rust/eBPF agent, Telegram, Tauri Control Center (AppImage/deb). **v1.2** adds **Fleet**: many VPS from one laptop over SSH + device token (no public control API).
 
-It samples CPU, memory, network, disk, and **GPU** once a second, cuts **60-second** windows into spectrogram-like matrices, and can score them with a **CNN** plus **Isolation Forest**. Training stays on another machine; the VPS runs **ONNX**. The same guard also runs with no model at all: perimeter, the Rust agent, and metrics. Around that sit egress and auth watching, OSINT on an attacker IP, Telegram alerts, and an optional local web UI. Response is operator-chosen — observe, shield, aggressive, or isolate — with a never-ban list so the box cannot lock out its owner.
-
-The day-to-day surface is a **Tauri 2 + Svelte** Control Center (Home, charts, alerts, settings; the rest behind Advanced), shipped as an **AppImage** or **.deb**, plus a headless day-0 install over SSH. A user systemd unit keeps protection running after the app closes. A polkit-gated root helper applies settings. The Rust agent watches process, file, and kernel signals, with optional **Aya eBPF** probes (`execve`, `openat`, module load and unload, `kill`, `setuid`). Related alerts become incidents with ATT&CK mapping and an HTML report.
-
-![Version](https://img.shields.io/badge/Version-v1.1.1-2EA44F?style=flat-square)
+![Version](https://img.shields.io/badge/Version-v1.2.0-2EA44F?style=flat-square)
 [![Repo](https://img.shields.io/badge/GitHub-SysSpectogram-181717?style=flat-square&logo=github)](https://github.com/lifeqsoll/SysSpectogram)
 [![Release](https://img.shields.io/github/v/release/lifeqsoll/SysSpectogram?style=flat-square)](https://github.com/lifeqsoll/SysSpectogram/releases)
 [![Demo](https://img.shields.io/badge/Live_demo-Pages-0588C6?style=flat-square)](https://lifeqsoll.github.io/SysSpectogram/demo/)
@@ -36,9 +32,7 @@ The day-to-day surface is a **Tauri 2 + Svelte** Control Center (Home, charts, a
 
 #### 2. Gavel AI — layered AI-vs-real image signals
 
-**[Gavel AI](https://github.com/lifeqsoll/gavel-ai)** is an **Apache-2.0** computer-vision prototype that looks for *signs* of AI image generation — not a courtroom “this is fake” claim, but a layered signal you can inspect.
-
-**L0** is a frozen **OpenCLIP ViT-L/14** backbone with a calibrated linear probe (`generated` / `uncertain` / `real`). Around it sit local layers: **anatomy** (MediaPipe face / pose / hands map + strict 2D hand warnings), **artifacts** (flat-region residual kurtosis as a soft cue), **geometry** (LSD + vanishing-point consistency), and a physics stub. **Fusion A** combines them: L0 or a hard layer vote can raise a generation signal; soft artifacts cannot overturn a strong L0=`real`; a clean face-free hand close-up can veto a known L0 false positive on stock gym hands. Wide diptychs are scored on left/right tiles. Ships a **Gradio** UI, typed `EvidenceProtocol` JSON, OpenCV overlays, and training / eval tooling for the probe.
+**[Gavel AI](https://github.com/lifeqsoll/gavel-ai)** (**Apache-2.0**) looks for *signs* of AI-generated images — not a hard “fake” verdict. Frozen **OpenCLIP** probe plus local anatomy / artifact / geometry layers, fused into an inspectable signal. Gradio UI + Evidence JSON.
 
 ![License](https://img.shields.io/badge/License-Apache_2.0-blue?style=flat-square)
 [![Repo](https://img.shields.io/badge/GitHub-gavel--ai-181717?style=flat-square&logo=github)](https://github.com/lifeqsoll/gavel-ai)
