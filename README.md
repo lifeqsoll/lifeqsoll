@@ -22,9 +22,9 @@
 
 #### 1. SysSpectogram — host defense as computer vision
 
-**[SysSpectogram](https://github.com/lifeqsoll/SysSpectogram)** **v1.2.0** - self-hosted Linux / VPS guard. Host telemetry becomes a spectrogram-like image for a small **CNN** (+ Isolation Forest); VPS runs **ONNX**, training stays elsewhere. Also works without ML: perimeter, Rust/eBPF agent, Telegram, Tauri Control Center (AppImage/deb). **v1.2** adds **Fleet**: many VPS from one laptop over SSH + device token (no public control API).
+**[SysSpectogram](https://github.com/lifeqsoll/SysSpectogram)** **v1.3.0** - self-hosted Linux / VPS guard. Host telemetry becomes a spectrogram-like image for a small **CNN** (+ Isolation Forest); VPS runs **ONNX**, training stays elsewhere. Also works without ML: perimeter, Rust/eBPF agent, Telegram, Tauri Control Center (AppImage/deb). **v1.2** adds **Fleet**: many VPS from one laptop over SSH + device token (no public control API).
 
-![Version](https://img.shields.io/badge/Version-v1.2.0-2EA44F?style=flat-square)
+![Version](https://img.shields.io/badge/Version-v1.3.0-2EA44F?style=flat-square)
 [![Repo](https://img.shields.io/badge/GitHub-SysSpectogram-181717?style=flat-square&logo=github)](https://github.com/lifeqsoll/SysSpectogram)
 [![Release](https://img.shields.io/github/v/release/lifeqsoll/SysSpectogram?style=flat-square)](https://github.com/lifeqsoll/SysSpectogram/releases)
 [![Demo](https://img.shields.io/badge/Live_demo-Pages-0588C6?style=flat-square)](https://lifeqsoll.github.io/SysSpectogram/demo/)
